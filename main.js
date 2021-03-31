@@ -96,7 +96,7 @@ document.querySelectorAll(".window").forEach((el) => {
 $(function () {
   $(".open-img").resizable({
     minWidth: 500,
-    minHeight: 500,
+    minHeight: 300,
   });
 });
 
