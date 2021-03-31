@@ -104,3 +104,35 @@ body {
   /* transition: width, opacity 0.5s; */
   /* transition: opacity, width 0.2s; */
 }
+
+.rightMenu {
+  display: none;
+  position: absolute;
+  font-weight: bold;
+  z-index: 1;
+  /* padding-left: 1.5rem; */
+  /* padding-right: 1.5rem; */
+  /* text-align: center; */
+}
+
+.rightMenu p {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.menu-item {
+  height: 1.4rem;
+  display: flex;
+}
+
+.menu-item:hover {
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.disable {
+  color: grey;
+  text-shadow: text-shadow;
+}
