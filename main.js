@@ -32,10 +32,9 @@ document.querySelector(".alert-bar-window").addEventListener("click", () => {
   }
 });
 //////////////////////////////////////////////////////////////////////////////////////////////
-
 // * Img Box
 //////////////////////////////////////////////////////////////////////////////////////////////
-let openImg = true;
+let openImg = false;
 let minimizeImg = true;
 let isClose = true;
 
@@ -90,7 +89,15 @@ document.querySelectorAll(".apps span").forEach((el) => {
 });
 
 document.querySelectorAll(".window").forEach((el) => {
+  // Assign Draggable
   $(el).draggable();
+});
+
+$(function () {
+  $(".open-img").resizable({
+    minWidth: 500,
+    minHeight: 500,
+  });
 });
 
 //////////////////////////////////////////////////////////////////////////////////////////////
