@@ -89,7 +89,7 @@ document.querySelectorAll(".apps span").forEach((el) => {
   $(el).draggable();
 });
 
-document.querySelectorAll(".window").forEach((el) => {
+document.querySelectorAll(".dragable").forEach((el) => {
   // Assign Draggable
   $(el).draggable();
 });
@@ -132,13 +132,21 @@ document.addEventListener("click", (event) => {
 });
 */
 
+let rightMenu = false;
+
 window.oncontextmenu = function (event) {
   document.querySelector(".rightMenu").style.display = "block";
   document.querySelector(".rightMenu").style.left =
     String(event.screenX) + "px";
   document.querySelector(".rightMenu").style.top =
     String(event.screenY - 135) + "px";
-
+  rightMenu = !rightMenu;
   event.preventDefault();
   event.stopPropagation();
 };
+
+document.querySelector(".top-window").addEventListener("click", () => {
+  if (document.querySelector(".rightMenu").style.display === "block") {
+    document.querySelector(".rightMenu").style.display = "none";
+  }
+});
