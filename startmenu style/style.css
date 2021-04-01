@@ -1,0 +1,43 @@
+.startmenu-bg {
+  width: 289px;
+  display: flex;
+  height: 485px;
+  position: absolute;
+  /* bottom: 265px; */
+}
+
+.startmenu-column-bar {
+  width: 479px;
+  height: 30px;
+  transform: translateY(230px) rotate(270deg);
+  color: #ffffff;
+  position: absolute;
+  left: -223px;
+  top: -3px;
+}
+
+.startmenu-apps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  height: 479px;
+  left: 35px;
+}
+
+.startmenu-app-box {
+  height: 40px;
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.startmenu-app-box:hover {
+  background-color: #1079cc;
+}
+
+.startmenu-app-box:hover .sm-app-name {
+  color: #ffffff;
+}

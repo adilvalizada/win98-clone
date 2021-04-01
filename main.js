@@ -1,3 +1,4 @@
+"use strict";
 let openAlert = true;
 
 // * Alert Box
@@ -126,9 +127,9 @@ document.addEventListener("click", (event) => {
   console.log(event.screenX, event.screenY);
   document.querySelector(".rightMenu").style.display = "block";
   document.querySelector(".rightMenu").style.left =
-    String(event.screenX) + "px";
+  String(event.screenX) + "px";
   document.querySelector(".rightMenu").style.top =
-    String(event.screenY - 135) + "px";
+  String(event.screenY - 135) + "px";
 });
 */
 
@@ -148,5 +149,26 @@ window.oncontextmenu = function (event) {
 document.querySelector(".top-window").addEventListener("click", () => {
   if (document.querySelector(".rightMenu").style.display === "block") {
     document.querySelector(".rightMenu").style.display = "none";
+  }
+});
+//////////////////////////////////////////////////////////////////////////////////////////////
+function getOffset(el) {
+  const rect = el.getBoundingClientRect();
+  return {
+    left: rect.left + window.scrollX,
+    top: rect.top + window.scrollY,
+  };
+}
+const y = getOffset(document.querySelector(".winBtn")).top;
+document.querySelector(".start-menu").style.top = y - 488 + "px";
+
+let startMenu = true;
+document.querySelector(".winBtn").addEventListener("click", () => {
+  if (startMenu) {
+    document.querySelector(".start-menu").style.display = "none";
+    startMenu = !startMenu;
+  } else {
+    document.querySelector(".start-menu").style.display = "flex";
+    startMenu = !startMenu;
   }
 });
