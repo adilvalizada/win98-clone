@@ -1,6 +1,6 @@
 .startmenu-bg {
   width: 289px;
-  display: flex;
+  display: none;
   height: 485px;
   position: absolute;
   /* bottom: 265px; */

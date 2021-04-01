@@ -138,9 +138,8 @@ let rightMenu = false;
 window.oncontextmenu = function (event) {
   document.querySelector(".rightMenu").style.display = "block";
   document.querySelector(".rightMenu").style.left =
-    String(event.screenX) + "px";
-  document.querySelector(".rightMenu").style.top =
-    String(event.screenY - 135) + "px";
+    String(event.clientX) + "px";
+  document.querySelector(".rightMenu").style.top = String(event.clientY) + "px";
   rightMenu = !rightMenu;
   event.preventDefault();
   event.stopPropagation();
@@ -162,7 +161,7 @@ function getOffset(el) {
 const y = getOffset(document.querySelector(".winBtn")).top;
 document.querySelector(".start-menu").style.top = y - 488 + "px";
 
-let startMenu = true;
+let startMenu = false;
 document.querySelector(".winBtn").addEventListener("click", () => {
   if (startMenu) {
     document.querySelector(".start-menu").style.display = "none";
