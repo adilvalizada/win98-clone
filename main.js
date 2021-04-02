@@ -155,7 +155,6 @@ document.querySelector(".start-menu").style.top = y - 488 + "px";
 let startMenu = false;
 
 document.addEventListener("keydown", (event) => {
-  console.log(event.key);
   if (startMenu) {
     if (event.key === "Escape") {
       document.querySelector(".start-menu").style.display = "none";
