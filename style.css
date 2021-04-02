@@ -36,14 +36,11 @@ body {
   color: #fff;
   padding: 0.5rem;
   text-align: center;
+  border: 0.1rem dashed transparent;
 }
 
 .apps span:active {
   border: 0.1rem dashed #fff;
-}
-
-.apps span:hover {
-  cursor: pointer;
 }
 
 .start-bar {
@@ -69,10 +66,6 @@ body {
   top: 35%;
 }
 
-/* .open-alert:hover {
-  cursor: pointer;
-} */
-
 .open-alert-ok {
   display: flex;
   justify-content: flex-end;
@@ -94,15 +87,9 @@ body {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAG0lEQVQYV2M8cODAf3t7ewbG/////z948CADAFuqCj64BtLKAAAAAElFTkSuQmCC);
 }
 
-.start-bar-window:hover {
-  cursor: pointer;
-}
-
 .open-img {
   transition-property: opacity;
   transition-duration: 0.3s;
-  /* transition: width, opacity 0.5s; */
-  /* transition: opacity, width 0.2s; */
 }
 
 .rightMenu {
@@ -110,9 +97,6 @@ body {
   position: absolute;
   font-weight: bold;
   z-index: 1;
-  /* padding-left: 1.5rem; */
-  /* padding-right: 1.5rem; */
-  /* text-align: center; */
 }
 
 .rightMenu p {
@@ -129,7 +113,6 @@ body {
 .menu-item:hover {
   background-color: blue;
   color: #fff;
-  cursor: pointer;
 }
 
 .disable {
