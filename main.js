@@ -14,14 +14,14 @@ document.querySelector(".close-btn").addEventListener("click", () => {
   document.querySelector(".open-alert").style.opacity = "0";
   setTimeout(() => {
     document.querySelector(".open-alert").style.display = "none";
-    document.querySelector(".alert-bar-window").remove();
+    document.querySelector(".alert-bar-window").style.display = "none";
   }, 300);
 });
 
 document.querySelector(".okBtn").addEventListener("click", () => {
   document.querySelector(".open-alert").style.opacity = "0";
   setTimeout(() => {
-    document.querySelector(".alert-bar-window").remove();
+    document.querySelector(".alert-bar-window").style.display = "none";
   }, 300);
 });
 
