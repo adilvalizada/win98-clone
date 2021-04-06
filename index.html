@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="startmenu style/style.css">
+    <link rel="stylesheet" href="my_computer/style.css" />
 </head>
 
 <body>
@@ -42,7 +43,7 @@
                 <p>New <img src="Icons/icons8_play_24px.png" width="15px" alt="arrow" style="margin-left: 5rem;"></p>
             </div>
             <hr>
-            <div class="menu-item">
+            <div class="menu-item properties">
                 <p>Properites</p>
             </div>
         </div>
@@ -54,9 +55,9 @@
                 <div>recycle</div>
             </span>
             <br>
-            <span>
+            <span class="myComputer">
                 <img src="img/computer_explorer-2.png" alt="recycle">
-                <div>computer</div>
+                <div>My computer</div>
             </span>
             <br>
             <span>
@@ -163,6 +164,158 @@
             </div>
         </div>
 
+        <!--My-Computer-->
+        <div class="window my-computer dragable" style="display: none">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    <img src="my_computer/img/computer_2_cool-1.png" alt="" />
+                    <p style="display: inline; font-size: Small">My Computer</p>
+                </div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" class="minimize-btn-myComp"></button>
+                    <button aria-label="Maximize" class="maximize-btn-myComp"></button>
+                    <button aria-label="Close" class="close-btn-myComp"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="command-line">
+                    <a href="#">File</a>
+                    <a href="#">Edit</a>
+                    <a href="#">View</a>
+                    <a href="#">Go</a>
+                    <a href="#">Favorites</a>
+                    <a href="#">Help</a>
+                </div>
+                <hr />
+                <div class="my-cmp-adr-line">
+                    <p style="margin-right: 5px; font-size: 14px">Address</p>
+                    <input style="width: 100%; height: 30px; padding-left: 10px" type="text" value="My Computer" />
+                </div>
+                <div class="my-cmp-main" style="background-color: #ffffff; width: 100%; height: 350px">
+                    <div class="disk-card">
+                        <img src="my_computer/img/floppy_drive_3_5-3.png" alt="" />
+                        <p>Floppy (A:)</p>
+                    </div>
+                    <div class="disk-card">
+                        <img src="my_computer/img/hard_disk_drive-4.png" alt="" />
+                        <p>Win98 (C:)</p>
+                    </div>
+                    <div class="disk-card">
+                        <img src="my_computer/img/hard_disk_drive-4.png" alt="" />
+                        <p>Storage (D:)</p>
+                    </div>
+                    <div class="disk-card">
+                        <img src="my_computer/img/hard_disk_drive-4.png" alt="" />
+                        <p>Recovery (E:)</p>
+                    </div>
+                    <div class="disk-card">
+                        <img src="my_computer/img/cd_drive-3.png" alt="" />
+                        <p>(G:)</p>
+                    </div>
+                    <div class="disk-card">
+                        <img src="my_computer/img/cd_drive-3.png" alt="" />
+                        <p>(H:)</p>
+                    </div>
+                    <div class="disk-card">
+                        <img src="my_computer/img/directory_control_panel-3.png" alt="" />
+                        <p>Control Panel</p>
+                    </div>
+                    <div class="disk-card">
+                        <img src="my_computer/img/directory_dial_up_networking-4.png" alt="" />
+                        <p>Dial-UP</p>
+                    </div>
+                </div>
+                <div class="my-cmp-footer">
+                    <hr />
+                    <div>
+                        <p>1 Object(s) selected</p>
+                    </div>
+                    <hr />
+                    <div>
+                        <p>Free Space : 6GB</p>
+                    </div>
+                    <hr />
+                    <div>
+                        <img src="my_computer/img/computer_2_cool-1.png" alt="" />
+                        <p>My Computer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="watermark" style="position: fixed; bottom: 50px; right: 20px;font-size: 0.7rem;">
+            <p>Product by</p>
+            <a href="https://www.instagram.com/master_javascript/" target="_blank">Vəlizadə Adil,</a>
+            <a href="https://www.instagram.com/master_javascript/" target="_blank">Rüstəmov Elcan and</a>
+            <a href="https://www.instagram.com/master_javascript/" target="_blank">Məmmədli Ramal</a>
+        </div>
+
+        <!--System Properties-->
+        <div class="sys-pro window dragable" style="display: none">
+            <div class="title-bar">
+                <div class="title-bar-text">System Properties</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" class="minimize-btn-pro"></button>
+                    <button aria-label="Close" class="close-btn-pro"></button>
+                </div>
+            </div>
+            <div class="sys-pro-main">
+                <a class="sys-pro-nav" href="#">General</a>
+                <a class="sys-pro-nav" href="#">Device Manager</a>
+                <a class="sys-pro-nav" href="#">Hardware Profiles</a>
+                <a class="sys-pro-nav" href="#">Performance</a>
+                <div style="
+              border: 2px solid;
+              border-color: #ffffff #808080 #808080 #fff;
+              width: 370px;
+              margin-top: 5px;
+            ">
+                    <div class="general-main" style="width: 370px; height: 390px">
+                        <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  margin-top: 20px;
+                  margin-right: 10px;
+                ">
+                            <img src="my_computer/img/logo.png" alt="" />
+                            <a style="font-size: 14px" href="https://www.instagram.com/master_javascript/"
+                                target="_blank">@master_javascript</a>
+                        </div>
+
+                        <div class="specs">
+                            <p>System :</p>
+                            <ul>
+                                <li>Microsoft Windows 98</li>
+                                <li>AzTU Edition</li>
+                                <li>Version V1.2.00.0</li>
+                            </ul>
+                            <p>Used :</p>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <p>Product by :</p>
+                            <ul>
+                                <li>Vəlizadə Adil</li>
+                                <li>Rüstəmov Elcan</li>
+                                <li>Məmmədli Ramal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="
+              display: flex;
+              width: 370px;
+              justify-content: flex-end;
+              margin-top: 8px;
+            ">
+                    <button class="pro-ok-btn">OK</button>
+                    <button class="pro-cancel-btn" style="margin-left: 10px">Cancel</button>
+                </div>
+            </div>
+        </div>
+
     </section>
     <footer>
         <div class="start-bar">
@@ -173,7 +326,15 @@
             </span>
             <span class="start-bar-window img-bar-window" style="display: none;">
                 <div class="sprite gallery"></div>
-                secret image :D
+                Image
+            </span>
+            <span class="start-bar-window pro-bar-window" style="display: none;">
+                <div class="sprite gallery"></div>
+                System properties
+            </span>
+            <span class="start-bar-window myComp-bar-window" style="display: none;">
+                <div class="sprite gallery"></div>
+                My Computer
             </span>
         </div>
 

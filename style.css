@@ -119,3 +119,19 @@ body {
   color: grey;
   text-shadow: text-shadow;
 }
+
+.my-computer {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.sys-pro {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}

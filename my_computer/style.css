@@ -1,0 +1,118 @@
+.my-computer {
+  width: 900px;
+  height: 500px;
+}
+
+.command-line {
+  height: 20px;
+  width: 890px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.my-cmp-main {
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.command-line a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #000000;
+  font-size: 14px;
+}
+
+.my-cmp-adr-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.disk-card {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.disk-card:hover {
+  border: 2px dotted #000000;
+}
+
+.disk-card:active {
+  background-color: #1079cc;
+}
+
+.disk-card p {
+  text-align: center;
+}
+
+.my-cmp-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-cmp-footer div {
+  height: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.watermark {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.watermark a {
+  color: #ffffff;
+}
+
+.watermark p {
+  text-align: right;
+}
+
+.sys-pro {
+  width: 400px;
+  height: 500px;
+}
+.sys-pro-main {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.general-main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.specs li {
+  font-size: 16px;
+}
+
+.specs ul {
+  list-style-type: none;
+}
+
+.specs p {
+  font-size: 16px;
+}
+
+.sys-pro-nav {
+  border: 2px solid;
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid;
+  border-color: #ffffff #808080 transparent #ffffff;
+}
+
+.sys-pro-nav:first-child {
+  background-color: #c0c0c0;
+}
+
+.sys-pro-nav:not(:first-child) {
+  border-left: transparent;
+}
