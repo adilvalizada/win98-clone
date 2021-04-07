@@ -310,3 +310,15 @@ document
       openMyComp = !openMyComp;
     }
   });
+
+// * Sound Module
+// let isCloseSound = false;
+// document.querySelector(".sound-icon").addEventListener("click", () => {
+//   if (isCloseSound) {
+//     document.querySelector(".loud-panel").style.display = "flex";
+//     isCloseSound = !isCloseSound;
+//   } else {
+//     document.querySelector(".loud-panel").style.display = "none";
+//     isCloseSound = !isCloseSound;
+//   }
+// });

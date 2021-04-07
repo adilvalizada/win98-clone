@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="startmenu style/style.css">
     <link rel="stylesheet" href="my_computer/style.css" />
+    <link rel="stylesheet" href="start-bar-right/sb-right.css">
 </head>
 
 <body>
@@ -168,8 +169,8 @@
         <div class="window my-computer dragable" style="display: none">
             <div class="title-bar">
                 <div class="title-bar-text">
-                    <img src="my_computer/img/computer_2_cool-1.png" alt="" />
-                    <p style="display: inline; font-size: Small">My Computer</p>
+                    <img src="my_computer/img/computer_2_cool-1.png" alt="myComp" />
+                    <p style="display: inline; font-size: small;">My Computer</p>
                 </div>
                 <div class="title-bar-controls">
                     <button aria-label="Minimize" class="minimize-btn-myComp"></button>
@@ -338,8 +339,64 @@
             </span>
         </div>
 
-    </footer>
+        <!-- Start bar / RIGHT PART -->
+        <div class='sb-right'>
+            <div class='sb-icons'>
+                <span>
+                    <img class='sb-calendar' src="./Icons/calendar-mini-icon.png" alt="">
+                </span>
 
+                <span class="sound-icon">
+                    <img class='sb-loudspeaker' src="./Icons/loudspeaker-mini-icon.png" alt="">
+                </span>
+                <!-- <img src="./Icons/loudspeaker_muted-mini-icon.png" alt=""> -->
+
+            </div>
+            <div class='sb-time'></div>
+        </div>
+
+        <!-- Hidden elements -->
+        <div class="loud-panel field-row hidden">
+            <p>Volume</p>
+            <div class="border-dotted"></div>
+            <div class="v-slider">
+                <input class="has-box-indicator" type="range" min="1" max="10" />
+            </div>
+            <div class="ucbucaq"></div>
+            <div class="mute">
+                <input type="checkbox" id="example1">
+                <label class="mute-text" for="example1">Mute</label>
+            </div>
+
+            <audio class="myAudio">
+                <source src="./sounds/ding-volume-sound.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class='window-calendar hidden'>
+            <div class="window" style="width: 300px">
+                <div class="title-bar">
+                    <div class="title-bar-text-s"><span class="calendar-menu-icon"><img
+                                src="./Icons/calendar-mini-icon.png" alt=""></span><span
+                            style="color: #fff;">Calendar</span>
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <img src="./img/calendar0.jpg" class="window-body-calendar" alt="">
+                    <div class="ok-cncl">
+                        <button class="pro-ok-btn">OK</button>
+                        <button class="pro-cancel-btn" style="margin-left: 0px">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+    </footer>
+    <div class="overlay hidden"></div>
 
 
 
@@ -349,6 +406,7 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
         integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src='./start-bar-right/script.js'></script>
 </body>
 
 </html>
