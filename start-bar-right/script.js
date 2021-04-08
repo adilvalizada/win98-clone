@@ -31,7 +31,7 @@ const loudPanel = document.querySelector(".loud-panel");
 const overlay = document.querySelector(".overlay");
 const muteBtn = document.querySelector("#example1");
 const volumeSlider = document.querySelector(".has-box-indicator");
-const ding = document.querySelector(".myAudio");
+const ding = document.querySelector(".sound-volume");
 
 //
 sbLoudspeaker.addEventListener("click", function () {
@@ -69,12 +69,50 @@ volumeSlider.addEventListener("mouseup", function () {
 /////////////////////////////////////////////////////
 const windowCalendar = document.querySelector(".window-calendar");
 const sbCalendar = document.querySelector(".sb-calendar");
+const calCloseIcon = document.querySelector(".cal-icon-close");
+const calMinimizeIcon = document.querySelector(".cal-icon-minimize");
+const topWindow = document.querySelector(".top-window");
+const btnCalOk = document.querySelector(".cal-btn-ok");
+const btnCalCancel = document.querySelector(".cal-btn-cancel");
+const soundStartup = document.querySelector('.sound-startup')
 
 sbCalendar.addEventListener("click", function () {
   windowCalendar.classList.toggle("hidden");
-  overlay.classList.remove("hidden");
 });
-overlay.addEventListener("click", function () {
+
+const hiddenCalendar = function () {
   windowCalendar.classList.add("hidden");
-  overlay.classList.add("hidden");
+};
+calMinimizeIcon.addEventListener("click", function () {
+  hiddenCalendar();
 });
+
+calCloseIcon.addEventListener("click", function () {
+  hiddenCalendar();
+});
+
+topWindow.addEventListener("click", function () {
+  if (!windowCalendar.classList.contains("hidden")) {
+    hiddenCalendar();
+  }
+});
+
+btnCalOk.addEventListener("click", function () {
+  hiddenCalendar();
+});
+
+btnCalCancel.addEventListener("click", function () {
+  hiddenCalendar();
+});
+
+// overlay.addEventListener("click", function () {
+//   windowCalendar.classList.add("hidden");
+//   overlay.classList.add("hidden");
+// });
+
+
+/* Startup */
+
+window.addEventListener('load',function(){
+  soundStartup.play();
+})

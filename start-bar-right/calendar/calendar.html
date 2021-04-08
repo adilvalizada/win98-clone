@@ -1,25 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Javascript Calendar</title>
-    <link href="calendar.css" rel="stylesheet">
-    <script src="calendar.js"></script>
-  </head>
-  <body>
 
-    <div id="cal-wrap">
-      <!-- [PERIOD SELECTOR] -->
-      <div id="cal-date">
-        <select id="cal-mth"></select>
-        <select id="cal-yr"></select>
-        <input id="cal-set" type="button" value="SET"/>
-      </div>
+<head>
+  <title>Simple Javascript Calendar</title>
+  <link href="calendar.css" rel="stylesheet">
+  <script src="calendar.js"></script>
+</head>
 
-      <!-- [CALENDAR] -->
-      <div id="cal-container"></div>
+<body>
 
-      <!-- [EVENT] -->
-      <div id="cal-event"></div>
+  <div style="width: 300px;">
+
+    <div class="cal-m-y">
+      <span class="cal-arrow-left"><img src="../" alt=""></span>
+      <p><span class="cal-month">April</span> <span class="cal-year">2021</span></p>
+      <span class="cal-arrow-right"></span>
+
     </div>
-  </body>
+
+    <table border="1" class="cal-date">
+
+      <tr class="cal-weekdays">
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>th</th>
+        <th>Fr</th>
+        <th>Sa</th>
+        <th>Su</th>
+      </tr>
+
+      <tr>
+        <th class="deactive">29</th>
+        <th class="deactive">30</th>
+        <th class="deactive">31</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+      </tr>
+
+      <tr>
+        <th>5a</th>
+        <th>6</th>
+        <th>7</th>
+        <th class="cal-cur-day" >8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+      </tr>
+
+      <tr>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+        <th>18</th>
+      </tr>
+
+      <tr>
+        <th>19</th>
+        <th>20</th>
+        <th>21</th>
+        <th>22</th>
+        <th>23</th>
+        <th>24</th>
+        <th>25</th>
+      </tr>
+
+      <tr>
+        <th>26</th>
+        <th>27</th>
+        <th>28</th>
+        <th>29</th>
+        <th>30</th>
+        <th class="deactive">1</th>
+        <th class="deactive">2</th>
+      </tr>
+      <tr>
+        <th class="deactive">1</th>
+        <th class="deactive">2</th>
+        <th class="deactive">3</th>
+        <th class="deactive">4</th>
+        <th class="deactive">5</th>
+        <th class="deactive">6</th>
+        <th class="deactive">7</th>
+      </tr>
+
+    </table>
+
+
+  </div>
+
+
+
+</body>
+
 </html>

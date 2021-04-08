@@ -16,7 +16,7 @@
 
 <body>
     <section class="top-window">
-
+        
         <!-- Right click -->
         <div class="window rightMenu" style="width: 150px">
             <div class="menu-item">
@@ -343,11 +343,11 @@
         <div class='sb-right'>
             <div class='sb-icons'>
                 <span>
-                    <img class='sb-calendar' src="./Icons/calendar-mini-icon.png" alt="">
+                    <img class='sb-calendar' src="./Icons/calendar-mini-icon.png" style="width: .9rem;" alt="">
                 </span>
 
                 <span class="sound-icon">
-                    <img class='sb-loudspeaker' src="./Icons/loudspeaker-mini-icon.png" alt="">
+                    <img class='sb-loudspeaker' src="./Icons/loudspeaker-mini-icon.png" style="width: .9rem;" alt="">
                 </span>
                 <!-- <img src="./Icons/loudspeaker_muted-mini-icon.png" alt=""> -->
 
@@ -368,29 +368,118 @@
                 <label class="mute-text" for="example1">Mute</label>
             </div>
 
-            <audio class="myAudio">
+            <audio class="sound-volume">
                 <source src="./sounds/ding-volume-sound.mp3" type="audio/mp3">
             </audio>
         </div>
+
         <div class='window-calendar hidden'>
-            <div class="window" style="width: 300px">
+            <div class="window" style="width: 250px">
                 <div class="title-bar">
                     <div class="title-bar-text-s"><span class="calendar-menu-icon"><img
                                 src="./Icons/calendar-mini-icon.png" alt=""></span><span
-                            style="color: #fff;">Calendar</span>
+                            style="color: #fff; font-size: .7rem;">Calendar</span>
                     </div>
                     <div class="title-bar-controls">
-                        <button aria-label="Minimize"></button>
-                        <button aria-label="Close"></button>
+                        <button aria-label="Minimize" class="cal-icon-minimize"></button>
+                        <button aria-label="Close" class="cal-icon-close"></button>
                     </div>
                 </div>
-                <div class="window-body">
-                    <img src="./img/calendar0.jpg" class="window-body-calendar" alt="">
-                    <div class="ok-cncl">
-                        <button class="pro-ok-btn">OK</button>
-                        <button class="pro-cancel-btn" style="margin-left: 0px">Cancel</button>
+
+
+                <div class="window-body-calendar">
+                    <!-- <img src="./img/calendar0.jpg" class="window-body-calendar" alt=""> -->
+
+                    <div class="cal-m-y">
+                        <span class="cal-arrow-left"><img style="width: .6rem; position: relative; left:2px; bottom:2px;" src="./Icons/cal-arrow-left.png" alt=""></span>
+                        <p><span class="cal-month">April</span> <span class="cal-year">2021</span></p>
+                        <span class="cal-arrow-right"><img style="width: .6rem; position: relative; left:5px; bottom:2px;" src="./Icons/cal-arrow-right.png" alt=""></span>
+                  
+                      </div>
+
+                    <table border="1" class="cal-date">
+
+                        <tr class="cal-weekdays">
+                            <th>Mo</th>
+                            <th>Tu</th>
+                            <th>We</th>
+                            <th>Th</th>
+                            <th>Fr</th>
+                            <th>Sa</th>
+                            <th>Su</th>
+                        </tr>
+
+                        <tr>
+                            <th class="deactive">29</th>
+                            <th class="deactive">30</th>
+                            <th class="deactive">31</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                        </tr>
+
+                        <tr>
+                            <th>5</th>
+                            <th>6</th>
+                            <th class="cal-cur-day">7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                        </tr>
+
+                        <tr>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                        </tr>
+
+                        <tr>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                        </tr>
+
+                        <tr>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th class="deactive">1</th>
+                            <th class="deactive">2</th>
+                        </tr>
+                        <tr>
+                            <th class="deactive">1</th>
+                            <th class="deactive">2</th>
+                            <th class="deactive">3</th>
+                            <th class="deactive">4</th>
+                            <th class="deactive">5</th>
+                            <th class="deactive">6</th>
+                            <th class="deactive">7</th>
+                        </tr>
+
+                    </table>
+
+
+
+                    <div class="cal-btns">
+                        <button class="pro-ok-btn cal-btn cal-btn-ok">OK</button>
+                        <button class="pro-cancel-btn cal-btn cal-btn-cancel">Cancel</button>
+                        <button disabled class="cal-btn">Apply</button>
                     </div>
                 </div>
+
+
             </div>
         </div>
         <!--  -->
@@ -398,7 +487,10 @@
     </footer>
     <div class="overlay hidden"></div>
 
-
+    <!--  -->
+    <audio class="sound-startup">
+        <source src="./sounds/win98-startup-sound.mp3" type="audio/mp3">
+    </audio>
 
     <!-- Scripts -->
     <!-- <script src="node_modules/dragula/dist/dragula.min.js"></script> -->
